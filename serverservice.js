@@ -4,9 +4,7 @@ const userRoute = require('./routes/user.route');
 const festRoute = require('./routes/fest.route');
 
 const app = express();
-
-
-const port = process.env.PORT
+const PORT = process.env.PORT ;
 
 require('dotenv').config();
 
@@ -28,8 +26,8 @@ app.get('/', (req, res) => {
 
 
 //สั่ง start web server โดยเปิด port รองรับการ requset/response ตามที่กำหนดไว้
-app.listen({port}, () => {
-    console.log(`Server is running on port ${port}`);
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
     // console.log("Server is running on port + port");
     // console.log('Server is running on port + port');
 })
