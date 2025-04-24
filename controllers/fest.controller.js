@@ -164,7 +164,7 @@ try{
     res.status(500).json({
         message: `พบปัญหาในการทำงาน: ${error}`
     })
-    Console.log(`Error: ${error}`);
+    console.log('Error', error);
 }
 };
 
